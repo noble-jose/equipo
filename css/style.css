@@ -1,0 +1,88 @@
+body{
+    background-color: #F0F0F0;
+    font-family: "Inter", sans-serif;
+}
+
+/* signup*/
+
+.container{
+    margin: 43px auto;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.left-wrp {
+    background-image: url('../portrait-doctor.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.headClass {
+    color: #053D76;
+    font-size: 21px;
+    font-weight: bolder;
+}
+.subText {
+    color: #000000;
+    opacity: 40%;
+}
+.right-wrp {
+    margin: 50px auto;
+    padding: 25px 70px 0;
+}
+input, button {
+    height: 50px;
+}
+input {
+    border-radius: 5;
+    border-color: #CBCBCB;
+    border: 1px solid;
+}
+::placeholder {
+    color: #CBCBCB;
+    opacity: 0.4; /* Firefox */
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #CBCBCB;
+}
+button {
+    background-color: #053D76 !important;
+}
+label {
+    color: #053D76;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*sign in*/
+
+/*error*/
+.error{
+    color: red;
+}
+
+@media screen and (max-width: 578px) {
+    .container{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        border-radius: 0;
+    }
+    .container .row .left-wrp {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container .row .left-wrp {
+        display: none !important;
+    }
+}
+
+
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+    .right-wrp {
+        margin: 50px auto;
+        padding: 0;
+    }
+}
